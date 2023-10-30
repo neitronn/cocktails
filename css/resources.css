@@ -1,0 +1,292 @@
+/* button */
+.button{
+    display: inline-block;
+    font: 400 14px/20px "Muli";
+    text-transform: capitalize;
+    padding: 12px 20px;
+    color:var(--main-color-white);
+    background: var(--main-color-red);
+    border-radius: 25px;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.button:hover{
+    color:var(--main-color-black);
+    background: var(--main-color-white);
+}
+
+.button.button-inversion{
+    color:var(--main-color-black);
+    background: var(--main-color-white);
+}
+
+.button.button-inversion:hover{
+    color:var(--main-color-white);
+    background: var(--main-color-red);
+}
+/* button */
+
+/* branded-header */
+.branded-header{
+    text-align: center;
+    font-size: 40px;
+    line-height:  42px;
+    font-weight: 700;
+    color: var(--main-color-red);
+    display: block;
+    background: url(../img/about_us/title_pattern.png) no-repeat scroll center top;
+    position: relative;
+    text-transform: capitalize;
+    padding: 60px 0 15px;
+    margin: 0 auto 30px;
+}
+
+.branded-header:before{
+    background: var(--main-color-red);
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+}
+/* branded-header */
+
+/* button-icon */
+.button-icon{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--main-color-red);
+    color: var(--main-color-white);
+    font-size: 16px;
+    position: relative;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.button-icon:hover{
+    background-color: var(--main-color-black);
+}
+
+.button-icon:before{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* button-icon */
+
+/* product */
+.product{
+ max-width: 285px;
+}
+
+.product-image{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.product-image::after {
+    border-bottom: double 4px #e9dbdb;
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.product-image img, .product-image__icons{
+    transition: all 1.5s;
+}
+
+.product-image__hover{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.product-image:hover .product-image__main{
+    opacity: 0;
+}
+.product-image:hover .product-image__hover, .product-image:hover .product-image__icons{
+    opacity: 1;
+}
+
+.product:hover .product-details .product-caption a{
+    color: var(--main-color-red);
+}
+
+.product-caption a{
+    color: var(--additional-color-black);
+    font: 600 15px/17px "Muli",Helvetica,sans-serif;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 0.7s;
+}
+
+.product-rating__value:before {
+    letter-spacing: 5px;
+    font-family: 'icomoon' !important;
+    content: "\e9d9 \e9d9 \e9d9 \e9d9 \e9d9";
+    color: var(--additional-color-grey);
+}
+
+.product-rating__value{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.current-price{
+    font: 700 20px/22px "Signika",Helvetica,sans-serif;
+    color: var(--main-color-red);
+}
+
+.old-price{
+    color: var(--main-color-grey);
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.product-image__icons{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    justify-content: center;
+    z-index: 5;
+    opacity: 0;
+}
+
+.product-image__icons .button-icon:not(:last-child){
+    margin-right: 7px;
+}
+
+.product-details{
+    text-align: center;
+}
+
+.current-price{
+    margin-right: 7px;
+}
+
+.product-rating{
+    margin: 8px 0;
+}
+
+.product-timer{
+    background-color:var(--main-color-white);
+    border: 1px solid #e5e5e5;
+    padding: 8px 10px;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.product-timer span{
+    color: #333;
+    font-size: 13px;
+    padding: 0 10px;
+    font-family: "Muli",Helvetica,sans-serif;
+    font-weight: 500;
+}
+
+.product-timer > span:not(:first-child, :last-child):after{
+    content: ":";
+    position: relative;
+    left: 10px;
+}
+
+.product-timer > span:last-child{
+    color: var(--main-color-red);
+}
+
+.product-timer > span:first-child{
+    padding-right: 0;
+}
+/* product */
+
+/* swiper */
+.swiper-button-prev, .swiper-button-next{
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s;
+    border: 2px solid #e9dbdb;
+    color: #e9dbdb;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    background-color: var(--main-color-red);
+    color: var(--main-color-white);
+    border: 2px solid var(--main-color-red);
+}
+
+.swiper-button-prev{
+    transform: rotate(180deg);
+    left: -80px;
+}
+
+.swiper-button-next{
+    right: -80px;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-family: 'icomoon' !important;
+    content: "\ea3c";
+    font-size: 20px;
+}
+/* swiper */
+
+/* parallax */
+.parallax{
+    width: 100%;
+    height: 558px;
+    position: relative;
+}
+
+.parallax:after{
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: url(../img/parallax-banner/pattern.png) no-repeat;
+    z-index: 2;
+}
+
+.parallax:before{
+    content: "";
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background: url(../img/parallax-banner/pattern.png) no-repeat;
+    z-index: 2;
+}
+/* parallax */

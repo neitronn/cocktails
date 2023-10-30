@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Signika';
+    src: url("./fonts/Signika-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url("./fonts/Signika-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url("./fonts/Signika-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url("./fonts/Signika-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url("./fonts/Signika-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url("./fonts/Muli-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url("./fonts/Muli-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url("./fonts/Muli-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+:root {
+    --main-color-white: #fff;
+    --main-color-black: #000;
+    --main-color-red: #ff4461;
+    --main-color-grey: #666;
+    --main-color-yellow: #fbaf5d;
+    --additional-color-black: #111;
+    --additional-color-grey: #d9d9d9;
+}
+
+body{
+    font-family: "Signika",Helvetica,sans-serif;
+    font-size: 14px;
+    min-width: 320px;
+    max-width: 1980px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+body *{
+    color: var(--main-color-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 24px;
+}
+
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+header, section{
+    margin-bottom: 90px;
+}
+
+.flex{
+    display: flex;
+}
