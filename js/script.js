@@ -9,7 +9,6 @@ if(!isMobile) {
 
 
 const swiper = new Swiper('.products-swiper', {
-    // Optional parameters
     slidesPerView: 4,
     loop: true,
     spaceBetween: 70,
@@ -21,7 +20,6 @@ const swiper = new Swiper('.products-swiper', {
 });
 
 const swiper_reviews = new Swiper('.swiper-reviews', {
-    // Optional parameters
     slidesPerView: 1,
     pagination: {
         el: '.swiper-reviews .swiper-pagination',
@@ -35,13 +33,23 @@ const swiper_reviews = new Swiper('.swiper-reviews', {
 });
 
 const swiper_blogs = new Swiper('.swiper-blogs', {
-    // Optional parameters
     slidesPerView: 3,
     rewind: true,
     spaceBetween: 30,
     navigation: {
         nextEl: '.blogs-content .swiper-button-next',
         prevEl: '.blogs-content .swiper-button-prev',
+    },
+    speed: 1000
+});
+
+const swiper_partners = new Swiper('.swiper-partners', {
+    slidesPerView: 5,
+    rewind: true,
+    spaceBetween: 70,
+    navigation: {
+        nextEl: '.partners .swiper-button-next',
+        prevEl: '.partners .swiper-button-prev',
     },
     speed: 1000
 });

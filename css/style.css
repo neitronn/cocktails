@@ -565,4 +565,27 @@ header{
     color: var(--main-color-black);
     font: 400 13px/20px "Muli",Helvetica,sans-serif;
 }
+
+.blogs-content .swiper-button-next, .blogs-content .swiper-button-prev{
+    opacity: 0;
+}
+
+.blogs-content:hover .swiper-button-next, .blogs-content:hover .swiper-button-prev{
+    opacity: 1;
+}
 /* blogs */
+
+/* partners */
+.partners .container{
+    position: relative;
+    padding: 0 50px;
+}
+
+.partners .swiper-button-next, .partners .swiper-button-prev{
+    opacity: 0;
+}
+
+.partners:hover .swiper-button-next, .partners:hover .swiper-button-prev{
+    opacity: 1;
+}
+/* partners */
