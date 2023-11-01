@@ -261,13 +261,13 @@ header{
 }
 /* trending-products */
 
-/* advertising-block */
-.advertising{
+/* interactive-block */
+.interactive{
     margin: 0 15px;
     position: relative;
 }
 
-.advertising-text{
+.interactive-text{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -280,25 +280,25 @@ header{
     z-index: 2;
 }
 
-.advertising-text__left{
+.interactive-text__left{
     left: 40px;
 }
 
-.advertising-text__right{
+.interactive-text__right{
     width: calc(45% - 40px);
     right: 40px;
 }
 
-.advertising-text__title{
+.interactive-text__title{
     font-size: 42px;
     line-height: 40px;
     font-weight: 700;
 }
 
-.advertising-text__offer-title{
+.interactive-text__offer-title{
     text-transform: capitalize;
     color: #fff;
-    background: url(../img/advertising-block/cms_text_bkg.png) no-repeat scroll center center;
+    background: url(../img/interactive-block/cms_text_bkg.png) no-repeat scroll center center;
     background-size: contain;
     display: inline-block;
     font-family: "Signika",Helvetica,sans-serif;
@@ -310,7 +310,7 @@ header{
     height: 72px;
 }
 
-.advertising:before, .advertising:after{
+.interactive:before, .interactive:after{
     content: "";
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 1s;
@@ -318,34 +318,34 @@ header{
     position: absolute;
 }
 
-.advertising:before{
+.interactive:before{
     width: 0;
     left: 50%;
     height: calc(100% - 10px);
     top: 5px;
 }
 
-.advertising:hover::before{
+.interactive:hover::before{
     width: calc(100% - 10px);
     left: 5px;
     border-bottom: 1px solid var(--main-color-white);
     border-top: 1px solid var(--main-color-white);
 }
 
-.advertising:after{
+.interactive:after{
     height: 0;
     top: 50%;
     width: calc(100% - 10px);
     left: 5px;
 }
 
-.advertising:hover::after{
+.interactive:hover::after{
     height: calc(100% - 10px);
     top: 5px;
     border-left: 1px solid var(--main-color-white);
     border-right: 1px solid var(--main-color-white);
 }
-/* advertising-block */
+/* interactive-block */
 
 /* reviews */
 .reviews .container{
