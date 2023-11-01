@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ehbaxl');
-  src:  url('fonts/icomoon.eot?ehbaxl#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ehbaxl') format('truetype'),
-    url('fonts/icomoon.woff?ehbaxl') format('woff'),
-    url('fonts/icomoon.svg?ehbaxl#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?q0o99i');
+  src:  url('fonts/icomoon.eot?q0o99i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?q0o99i') format('truetype'),
+    url('fonts/icomoon.woff?q0o99i') format('woff'),
+    url('fonts/icomoon.svg?q0o99i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -33,6 +33,12 @@
 }
 .icon-cart:before {
   content: "\e93a";
+}
+.icon-address-book:before {
+  content: "\e944";
+}
+.icon-location:before {
+  content: "\e947";
 }
 .icon-clock:before {
   content: "\e94e";
@@ -63,4 +69,7 @@
 }
 .icon-arrow-right2:before {
   content: "\ea3c";
+}
+.icon-mail4:before {
+  content: "\ea86";
 }
