@@ -15,42 +15,6 @@ header{
     align-items: center;
 }
 
-.header_top > ul{
-    list-style: none;
-}
-
-.header_top .top_level > li{
-    display: inline-block;
-    padding: 15px;
-    font-size: 18px;
-    font-family: "Muli",Helvetica,sans-serif;
-    font-weight: 700;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 30px;
-}
-
-.header_top .top_level > li a{
-    display: flex;
-    align-items: center;
-}
-
-.header_top .top_level > li:hover{
-    background-color: var(--main-color-red);
-}
-
-.header_top .top_level > li span{
-    display: inline-block;
-    transform: rotate(180deg);
-    transition: all 0.3s;
-    margin-left: 3px;
-}
-
-.header_top .top_level > li:hover span{
-    transform: rotate(0);
-}
-
 .nav .icon{
    margin: 0 15px;
     transition: 0.7s;

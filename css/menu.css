@@ -1,0 +1,112 @@
+.main-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu .top_level > li{
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Muli",Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 30px;
+    position: relative;
+}
+
+.main-menu .top_level > li a{
+    display: flex;
+    align-items: center;
+}
+
+.main-menu .top_level > li:hover{
+    background-color: var(--main-color-red);
+}
+
+.main-menu .top_level > li span{
+    display: inline-block;
+    transform: rotate(180deg);
+    transition: all 0.3s;
+    margin-left: 3px;
+}
+
+.main-menu .top_level > li:hover span{
+    transform: rotate(0);
+}
+
+.main-menu .top_level > li:hover > .dropdown-menu{
+    opacity: 1;
+    top: 70px;
+    z-index: 5;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    background-color: var(--main-color-white);
+    padding: 25px 10px;
+    border-top: 3px solid var(--main-color-red);
+    color: var(--main-color-grey);
+    display: flex;
+    opacity: 0;
+    left: -10px;
+    top: 91px;
+    cursor: auto;
+    transition: all 0.7s;
+}
+
+.dropdown-menu a{
+    color: var(--main-color-grey);
+    font: 400 13px/20px "Muli",Helvetica,sans-serif;
+    text-transform: capitalize;
+    padding: 3px 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.dropdown-menu h5 a{
+    text-transform: capitalize;
+    color: var(--additional-color-black);
+    font: 700 18px/24px "Muli",Helvetica,sans-serif;
+}
+
+.dropdown-menu h5{
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-menu__column{
+    width: 210px;
+    margin: 0 15px;
+}
+
+.simple-menu{
+    padding: 10px 0;
+}
+
+.simple-menu .dropdown-menu__column{
+    width: auto;
+}
+
+.dropdown-menu span{
+    color: var(--main-color-grey);
+    transform: rotate(90deg) !important;
+}
+
+.open-submenu{
+    position: relative;
+}
+
+.submenu{
+    left: calc(100% + 15px);
+    top: 10px;
+}
+
+.open-submenu:hover > .submenu{
+    opacity: 1;
+    top: -10px;
+}
