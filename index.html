@@ -19,6 +19,9 @@
     <script src="js/swiper.js"></script>
 </head>
 <body>
+<div class="top_site">
+    <span class="icon-cheveron-up"></span>
+</div>
     <header>
         <div class="header_top">
             <div class="logo">
@@ -133,14 +136,27 @@
                 </div>
             </div>
         </div>
-        <div class="main-slider">
-            <div class="main-slider-slide">
-                <img src="img/header/Main-banner-1.jpg" alt="главный банер">
-                <div class="slide-content slide-content__left">
-                    <div class="slider-description">Summer Cold</div>
-                    <div class="slider-title">Drink A Smoothie</div>
+
+        <div class="main-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="main-slider-slide swiper-slide">
+                    <img src="img/header/Main-banner-1.jpg" alt="главный банер">
+                    <div class="slide-content slide-content__left">
+                        <div class="slider-description">Summer Cold</div>
+                        <div class="slider-title">Drink A Smoothie</div>
+                    </div>
+                </div>
+
+                <div class="main-slider-slide swiper-slide">
+                    <img src="img/header/Main-banner-2.jpg" alt="главный банер">
+                    <div class="slide-content slide-content__right">
+                        <div class="slider-description">Summer Cold</div>
+                        <div class="slider-title">Drink A Smoothie</div>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
     </header>
@@ -148,15 +164,15 @@
 <section class="types_cocktails">
     <div class="container types_cocktails-grid">
         <div class="types_cocktails-item">
-            <img src="img/types_cocktails/sub-banner-1.jpg">
+            <a href="#"><img src="img/types_cocktails/sub-banner-1.jpg"></a>
             <p class="types_cocktails-item__title types_cocktails-item__title-right">Fresh Juice</p>
         </div>
         <div class="types_cocktails-item">
-            <img src="img/types_cocktails/sub-banner-2.jpg">
+            <a href="#"><img src="img/types_cocktails/sub-banner-2.jpg"></a>
             <p class="types_cocktails-item__title types_cocktails-item__title-top">Refreshment</p>
         </div>
         <div class="types_cocktails-item">
-            <img src="img/types_cocktails/sub-banner-3.jpg">
+            <a href="#"><img src="img/types_cocktails/sub-banner-3.jpg"></a>
             <p class="types_cocktails-item__title types_cocktails-item__title-left">Fresh Smoothie</p>
         </div>
     </div>
