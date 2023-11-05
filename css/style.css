@@ -279,6 +279,14 @@ header .swiper-button-next, header .swiper-button-prev{
     margin-top: 40px;
 }
 
+.about_us-content__image{
+    transition: all 0.5s;
+}
+
+.about_us-content__image:hover{
+    transform: scale(1.03);
+}
+
 .about_us-content__services .service-title{
     color: var(--main-color-black);
     font: 700 20px/24px "Signika";
@@ -313,6 +321,26 @@ header .swiper-button-next, header .swiper-button-prev{
     -o-transition: all 400ms ease-in-out;
     text-align: center;
     margin-right: 35px;
+}
+
+.service-img:hover{
+    background: rgba(0,0,0,0) url(../img/about_us/services-hover-bg.png) no-repeat scroll 0 0 / contain;
+}
+
+.about_us-content__services .icon{
+    transition: all 0.5s;
+}
+
+.about_us-content__services > .services:nth-child(1) .service-img:hover .icon{
+    background-position: -105px -17px;
+}
+
+.about_us-content__services > .services:nth-child(2) .service-img:hover .icon{
+    background-position: -105px -97px;
+}
+
+.about_us-content__services > .services:nth-child(3) .service-img:hover .icon{
+    background-position: -105px -188px;
 }
 
 .service-img .icon{
@@ -375,6 +403,47 @@ header .swiper-button-next, header .swiper-button-prev{
 /* trending-products */
 .products-list{
     position: relative;
+    display: none;
+}
+
+.products-list.list-action{
+    display: block;
+    animation-duration: 1.5s;
+    animation-name: list-show;
+    animation-fill-mode: forwards;
+}
+
+@keyframes list-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+    font: 400 14px/20px "Muli";
+    text-transform: capitalize;
+    padding: 12px 20px;
+    color: var(--additional-color-black);
+    background: var(--main-color-white);
+    border-radius: 25px;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.tab-active, .tab:hover{
+    color:var(--main-color-white);
+    background: var(--main-color-red);
 }
 
 .product-group > .product:first-child{
