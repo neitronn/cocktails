@@ -1,3 +1,4 @@
 *.log
 *.htaccess
 /node_modules
+/js
