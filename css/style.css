@@ -371,9 +371,6 @@ header .swiper-button-next, header .swiper-button-prev{
 /* about_us */
 
 /* parallax-banner */
-.parallax-banner{
-    background: url(../img/parallax-banner/parallax-banner.jpg) no-repeat;
-}
 
 .parallax-banner .container{
     position: relative;
